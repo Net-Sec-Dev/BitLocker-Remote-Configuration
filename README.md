@@ -1,6 +1,6 @@
 # Enable BitLocker via TPM with Recovery Key Export
 
-> A simple, automated PowerShell script to enable BitLocker encryption on a drive using TPM and safely export the recovery key for backup. Designed for use with deployment tools like **PDQ Deploy**. It is highly recommended to use a second script before this one to ensure the drive paths are writable.
+A simple, automated PowerShell script to enable BitLocker encryption on a drive using TPM and safely export the recovery key for backup. Designed for use with deployment tools like **PDQ Deploy**. It is highly recommended to use a second script before this one to ensure the drive paths are writable.
 
 ---
 
@@ -16,9 +16,6 @@ This script helps you:
 ---
 
 ## How It Works
-
-Here’s the high-level workflow of the script:
-
 ```text
 Start
  │
