@@ -13,10 +13,10 @@ This script will:
 
 ## Configuration
 
-$MountPoint = "C:"                      # Drive to encrypt <br />
-$EncryptionMethod = "XtsAes256"         # Encryption strength<br />
-$ExportPath = "\\network\share"         # Folder to save recovery key<br />
-$Version = "Enable Bitlocker v2.1 PDQ"  # Script version<br />
+$MountPoint = "C:" --------------------- Drive to encrypt <br />
+$EncryptionMethod = "XtsAes256" -------- Encryption strength<br />
+$ExportPath = "\\network\share" -------- Folder to save recovery key<br />
+$Version = "Enable Bitlocker v1.0" ----- Script version (outputs to log file)<br />
 
 ## Exit Codes
 
