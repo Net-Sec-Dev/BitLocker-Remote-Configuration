@@ -41,7 +41,7 @@ Start
  │       └─> Exit 77 if not reachable
  │
  │ Check BitLocker status on target drive
- │       └─> Exit 88 if drive info cannot be retrieved
+ │       ├─> Exit 88 if drive info cannot be retrieved
  │       └─> Exit 99 if BitLocker already enabled
  │
  │ Check for TPM protector
