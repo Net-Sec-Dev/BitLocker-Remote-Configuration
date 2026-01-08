@@ -1,12 +1,12 @@
 # Enable BitLocker via TPM and export recovery key using manage-bde
-# Compatible with PDQ Deploy (no parameter set conflicts)
+# Made for PDQ Deploy and Ansible. Requires admin or SYSTEM privleges.
 # -----------------------------------------------------------
 
 # ------------------- Configuration -------------------
-$MountPoint = "C:"                           # Drive to encrypt
-$EncryptionMethod = "XtsAes256"              # Encryption strength
+$MountPoint = "C:"                           # Drive to encrypt - default = C:
+$EncryptionMethod = "XtsAes256"              # Encryption strength - default = XtsAes256
 $ExportPath = "//network/path"               # Network folder to save recovery key
-$Version = "Enable Bitlocker v1.0"           # Script name and version number                   
+$Version = "Enable Bitlocker Remote v1.0"    # Script name and version number (placed in log file along with recovery key) - default = Enable Bitlocker Remote v1.0                  
 
 # ------------------- Pre-checks ----------------------
 Write-Host "Starting BitLocker enablement on $MountPoint..."
