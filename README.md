@@ -20,17 +20,18 @@ Script version (outputs to log file): $Version = "Enable Bitlocker v1.0" <br />
 
 ## Exit Codes
 
-0	BitLocker enabled and recovery key exported.<br />
-99	BitLocker is already enabled on the drive.<br />
-
-22	Failed to write the recovery key file (check permissions/network path).<br />
-33	Could not parse recovery information from manage-bde.<br />
-44	Failed to enable BitLocker.<br />
-45	Failed to resume BitLocker encryption (if suspended).<br />
-55	Failed to add recovery password protector.<br />
-66	Failed to query manage-bde output.<br />
-77	Export path does not exist or is unreachable.<br />
-88	Unable to retrieve BitLocker volume information.<br />
+| Code | Description |
+|-----:|-------------|
+| 0 | Recovery key exported successfully |
+| 99 | BitLocker is already enabled on the drive |
+| 22 | Failed to write the recovery key file (check permissions/network path) |
+| 33 | Could not parse recovery information from manage-bde. |
+| 44 | Failed to enable BitLocker for unspecified reason. |
+| 45 | Failed to add a recovery password protector. |
+| 55 | Failed to add recovery password protector. |
+| 66 | Failed to query manage-bde output. |
+| 77 | Export path does not exist or is unreachable. |
+| 88 | Unable to retrieve BitLocker volume information. |
 
 ## How It Works
 ```text
